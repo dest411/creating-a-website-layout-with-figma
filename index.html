@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="filters.css">
+    <link rel="stylesheet" href="propisitions.css">
+</head>
+<body>
+    <div class="background">
+        <header class="container">
+        <span class="logo">BHB</span>
+        <nav class="left-block">
+            <ul class="nav-links-left">
+                <li><a href="#">Hot Tours</a></li>
+                <li><a href="#">Countries</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+           
+        <div class="button">
+            <button class="search">Search everything...
+                <img class="glass" src="./img/magnify.png"  alt="lupa">
+            </button>
+            
+
+        </div> 
+        <nav class="right-block">
+            <img class="worldpng" src="./img/world.png" alt="world">
+    <ul class="nav-links-right">
+        
+        <li><a href="#">EN</a></li>
+        <li><a class="login" href="#">Log In</a></li>
+        <li><button class="nav-btn signup-btn">Sign Up</button></li>
+    </ul>
+    </ul>   
+</nav>
+     </header>
+    
+        <div class="herocontainer">
+        <div class="info-hero">
+            <h1>Book your dream trip</h1>
+            <p>Explore interesting trips, best hotels and discover new countries</p>
+        </div>
+
+        <div class="hero-filters">
+<!-- ФІЛЬТРИ -->
+                <div class="first-parth">            
+                     
+                    
+                    <div class="where">
+                        <img class="mappoint" src="./img/Vector.png" alt="mappoint">
+                        <div class="text">
+                            <span>Where?</span><br>
+                            <span>Anywhere</span>
+                        </div>
+                        <img class="ptichkaone" src="./img/ptichka.png" onclick="toggleList()" alt="">
+                        <div class="list" id="birdlist-where">
+                            <input type="checkbox" class="check"><div class="item">London</div>
+                            <input type="checkbox" class="check"><div class="item">Paris</div>
+                            <input type="checkbox" class="check"><div class="item">New York</div>
+                        </div>
+                    </div>
+
+                    <div class="date">
+                        <img class="mappoint2" src="./img/calendar-event.png" alt="">
+                        <div class="text">
+                            <span>Date of settlement</span><br>
+                            <span>06.10.2024</span> 
+                        </div>
+                        
+                        <img class="ptichkaone" src="./img/ptichka.png"onclick="toggleList2()" alt="">
+                         <div class="list" id="birdlist-date">
+                            <div class="item">07.10.2024</div>
+                            <div class="item">08.10.2024</div>
+                            <div class="item">09.10.2024</div>
+                        </div>
+                                                   
+                    </div>
+
+                    <div class="people">
+                        <img class="mappoint3" src="./img/user.png" alt="">
+                        <div class="text">
+                            <span>People</span><br>
+                            <span>2 adults, 1 child</span> 
+                        </div>
+                        <img class="ptichkaone" src="./img/ptichka.png" onclick="toggleList3()"alt="">
+                        <div class="list3" id="birdlist-people">
+                            <div class="item">07.10.2024</div>
+                            <div class="item">08.10.2024</div>
+                            <div class="item">09.10.2024</div>
+                        </div>   
+                    </div>
+                </div>
+
+                <div class="second-parth">
+                    <div class="filters-secondpart"></div>
+                    <div class="search-secondpart">
+                        <div class = "fifsec">
+                            <span>Filter</span>
+                            <button class="btnn" onclick="toggleBtnTheme(this)">All</button>
+                            <button class="btnn" onclick="toggleBtnTheme(this)">Hotels</button>
+                            <button class="btnn" onclick="toggleBtnTheme(this)">Villas</button>
+                            <button class="btnn" onclick="toggleBtnTheme(this)">Apartaments</button>
+                            <button class="btnn" onclick="toggleBtnTheme(this)">Resorts</button>
+                            <button class="btnn" onclick="toggleBtnTheme(this)">Cotages</button>
+                    </div>
+                    
+                        <button class="search-btn">Search
+                            <img class="strilka" src="./img/strilka.png" alt="strilka">
+                        </button>
+                    </div>
+                </div>
+        </div>
+        
+        </div>
+    </div>
+<!-- ФІЛЬТРИ -->
+
+
+
+    <div class="background2">
+        <div class="propisition">
+        <div class="text"><h1>Discover best propisitions</h1></div>
+
+        <div class="first-line">
+            <div class="hotels">
+                <div class="main">
+                    <img src="./img/Frame 222.png" alt="">
+                    <img class="homepng" src="./img/home.png" alt="home">
+                    <div class="info">
+                        <span>Hotels</span>
+                        
+                        <span class="numbers">6 094 avaible</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resorts">
+                <div class="main">
+                    <img src="./img/resorts.png" alt="">
+                    <img class="homepng" src="./img/home.png" alt="home">
+                    <div class="info">
+                        <span>Resorts</span>
+                        <span class="numbers">7 545 avaible</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="apartaments">
+                <div class="main">
+                    <img src="./img/apartaments.png" alt="">
+                    <img class="homepng" src="./img/home.png" alt="home">
+                    <div class="info">
+                        <span>Apartaments</span>
+                        <span class="numbers">8 223 avaible</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="second-line">
+            <div class="cotages">
+                <div class="main">
+                    <img src="./img/cotages.png" alt="">
+                    <img class="homepng2" src="./img/home.png" alt="home">
+                    <div class="info">
+                        <span>Cotages</span>
+                        <span class="numbers">8 223 avaible</span>
+                    </div>
+                </div>
+            </div>
+            <div class="villas">
+                <div class="main">
+                    <img src="./img/villas.png" alt="">
+                    <img class="homepng2" src="./img/home.png" alt="home">
+                    <div class="info">
+                        <span>Villas</span>
+                        <span class="numbers">8 223 avaible</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    
+<script src="main.js"></script>
+</body>
+</html>
+
+
+<!-- COMPLETED BY Vadym -->

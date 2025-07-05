@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap');
+.hero-filters{
+    
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 0px;
+    margin-bottom: 200px;
+    
+}
+
+.first-parth{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid hsl(0, 0%, 90%); /* колір і товщина лінії */
+    
+}
+.first-parth > .date,
+.first-parth > .people {
+    border-left: 2px solid hsl(0, 0%, 90%); /* колір і товщина лінії */
+}
+.first-parth > div {
+    flex: 1 1 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.where{
+    position: relative;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    
+}
+.check{
+    display: flex;
+}
+.mappoint{
+    width: 15px;
+    height: 15px;
+    align-self: center;
+    border: 1px solid silver;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+
+.list{
+    position: absolute;
+    border: 1px solid hsl(0, 0%, 85%);
+    border-radius:7px;
+    padding: 7px 10px 7px 5px;
+    right: 5px;
+    top: 50px;
+    background-color: white;
+    font-size: 11px;
+}
+.list3{
+    position: absolute;
+    border: 1px solid hsl(0, 0%, 85%);
+    border-radius:7px;
+    padding: 7px 10px 7px 5px;
+    right: 5px;
+    top: 50px;
+    background-color: white;
+}
+.list2{
+    position: absolute;
+    border: 1px solid hsl(0, 0%, 85%);
+    border-radius:7px;
+    padding: 7px 10px 7px 5px;
+    
+    top: 50px;
+    background-color: white;
+}
+.list .item {
+    cursor: pointer;
+    margin-bottom: 4px;
+    transition: font-size 0.2s, transform 0.2s;
+}
+.list .item,
+.list2 .item,
+.list3 .item {
+    cursor: pointer;
+    margin-bottom: 4px;
+    transition: font-size 0.2s, transform 0.2s;
+}
+.list3 .item{
+    font-size: 11px;
+}
+.list .item:hover,
+.list2 .item:hover,
+.list3 .item:hover {
+    transform: scale(1.05);
+    /* font-size: 1.1em; якщо треба */
+}
+
+.mappoint2{
+    width: 15px;
+    height: auto;
+    align-self: center;
+    border: 1px solid silver;
+    border-radius: 50%;
+    padding: 10px;
+}
+.mappoint3{
+    width: 15px;
+    height: auto;
+    align-self: center;
+    border: 1px solid silver;
+    border-radius: 50%;
+    padding: 10px;
+    
+}
+.list, .list3 {
+    display: none;
+}
+.list.active, .list3.active {
+    display: block;
+}
+
+.where,
+.date,
+.people .text span:first-child {
+    font-size: 0.7em;
+}
+
+.people .text span:nth-of-type(2) {
+    color: black;
+}
+.where .text span:first-of-type,
+.date .text span:first-of-type,
+.people .text span:first-of-type {
+    color: gray;
+}
+
+.where .text span:nth-of-type(2),
+.date .text span:nth-of-type(2),
+.people .text span:nth-of-type(2) {
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+.search-secondpart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+    
+    
+}
+
+.fifsec{
+    display: flex;
+    margin: 10px;
+    gap: 16px;
+    width: 50%;
+    height: auto;
+    align-items: center;
+}
+.fifsec span{
+   font-family: 'Wix Madefor Text', sans-serif;
+   font-size: 20px;
+   margin-right: 10px ; 
+}
+
+.btnn{
+    font-family: 'Wix Madefor Text', sans-serif;
+    font-size: 20px;
+    background-color: white;
+    border: 1px solid silver; /* товщина, стиль, колір */
+    border-radius: 15px;
+    padding: 3px 17px 3px 17px;
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+.btnn:hover {
+    transform: scale(1.1);
+    background-color: hsl(0, 0%, 90%);
+}
+.search-btn {
+    width: 200px;         /* фіксована ширина */
+    height: 48px;         /* фіксована висота */
+        /* притискає до правого краю flex-контейнера */
+    display: block;
+    padding: 0;           /* padding не потрібен, якщо є height */
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Wix Madefor Text', sans-serif;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all 500ms ease; 
+}
+
+
+.btnn.dark {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+.strilka{
+    width: 13px;
+    height: auto;
+    margin-left: 20px;
+}
+.ptichkaone{
+    cursor: pointer;
+    position: relative;
+    right: 15px;
+    width: 10px;
+    height: 8px;
+    margin-left: auto;
+    transition: transform 0.2s;
+    border: 1px solid hsl(0, 0%,80%);
+    padding: 8px;
+    border-radius: 50px;
+    opacity: 0.7;
+}
+
+.ptichkaone:hover{
+    transform: scale(1.1);
+}
+
+.date{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    position: relative;
+}
+.people{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    position: relative;
+}

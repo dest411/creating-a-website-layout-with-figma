@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Wix Madefor Text', sans-serif;
+  font-weight: medium;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.background {
+  background: url('img/image.svg') no-repeat center center ;
+  background-size: cover;
+  width: 100%;
+  height: 1080px;
+  
+
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+header {
+  padding: 50px 0;
+  gap: 40px;
+}
+
+header .logo{
+  text-transform: uppercase;
+  font-family: 'Wix Madefor Text', sans-serif;
+  font-weight: 900;
+  font-size: 36px;
+  margin-right: 20%;
+  position: relative;
+  left: 50px; /* зміщення правіше */
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
+
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  background: hsl(0, 0%, 85%);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 8px 12px;
+  width: 300px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  font-family: 'Wixh Madefor Text', sans-serif;
+  color: hsl(0, 0%, 35%);
+  font-size: 1.1em;
+  font-weight: medium;
+  gap: 100px;
+  cursor: text;
+} 
+
+.glass{
+  width: 15px;
+  height: 15px;
+  /* display: inline-block;
+  margin-right: 10px; */
+}
+.worldpng{
+  width: 20px;
+  height: auto;
+  position: relative;
+  right: 5px;
+}
+
+
+
+.right-block {
+  margin-left: auto;
+  /* або можна додати flex: 1; якщо треба розтягнути */
+  
+}
+.nav-links-right {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+}
+.nav-links-left li {
+  position: relative;
+  right: 100px;
+}
+ 
+
+nav .nav-links-right a,
+nav .nav-links-left a {
+  color: black;
+}
+
+.nav-btn{
+  font-family: 'Wix Madefor Text', sans-serif;
+  font-weight: medium;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  background-color: black;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 500ms ease;
+}
+
+.login{
+  display: inline-block;
+  transition: all 500ms ease;
+}
+.login:hover {
+  transform: scale(1.1);
+}
+
+.nav-btn:hover {
+  transform: scale(1.1);
+} 
+.nav-links-right li:nth-child(2) {
+  position: relative;
+  left: 30px; /* зміщення правіше */
+}
+
+.info-hero h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 100px;
+  font-weight: 400;
+  margin-top: 50px;
+}
+.info-hero p {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 400px;
+}
+.hero-filters {
+  background-color: white;
+}
+
+.nav-btn signup-btn{
+  transition: all 500ms ease;
+}
+.nav-btn signup-btn:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+
